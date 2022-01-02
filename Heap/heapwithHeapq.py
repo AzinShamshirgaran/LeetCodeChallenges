@@ -1,3 +1,12 @@
+"""
+Python's built-in heap module, heapq, differs from the standard implementation of a heap in two ways. Firstly, it uses zero-based indexing, and this means that it stores the root node at index zero instead of the size of the heap. As a result, the relationship between the index of the children and parent nodes is slightly different. Secondly, the built-in heapq module does not offer a direct way to create a max heap. Instead, we must modify the value(s) of each element when inserting it into the heap and when removing it from the heap.
+
+Time complexity: O(N).
+
+Space complexity: O(N).
+"""
+
+
 import heapq
 
 # Construct an empty Min Heap
