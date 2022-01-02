@@ -34,3 +34,55 @@ maxHeap = [-x for x in maxHeap]
 heapq.heapify(maxHeap)
 # The top element of maxHeap is -3
 # Convert -3 to 3, which is the maximum value in the original maxHeap
+
+"""
+Time complexity: O(logN)
+
+Space complexity: O(1)
+"""
+
+# Insert an element to the Min Heap
+heapq.heappush(minHeap, 5)
+
+# Insert an element to the Max Heap
+# Multiply the element by -1
+# As we are converting the Min Heap to a Max Heap
+heapq.heappush(maxHeap, -1 * 5)
+
+"""
+Time complexity: O(1).
+
+Space complexity: O(1).
+"""
+
+# Get top element from the Min Heap
+# i.e. the smallest element
+minHeap[0]
+# Get top element from the Max Heap
+# i.e. the largest element
+# When inserting an element, we multiplied it by -1
+# Therefore, we need to multiply the element by -1 to revert it back
+-1 * maxHeap[0]
+
+"""
+Time complexity: O(logN).
+
+Space complexity: O(1).
+"""
+# Delete top element from the Min Heap
+heapq.heappop(minHeap)
+
+# Delete top element from the Max Heap
+heapq.heappop(maxHeap)
+
+"""
+Time complexity: O(1)
+
+Space complexity: O(1)
+"""
+
+# Length of the Min Heap
+len(minHeap)
+
+# Length of the Max Heap
+len(maxHeap)
